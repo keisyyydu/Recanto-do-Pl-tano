@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recanto do Plátano</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Serif+Display&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #5a473b;
+      color: #f4f1ee;
+    }
+
+    header {
+      background-image: url('imagens/foto5.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(to right, rgba(20, 15, 10, 0.75), rgba(45, 35, 25, 0.75));
+    }
+
+    .titulo-principal {
+      font-size: 4.5rem;
+      color: #e8ddd2;
+      font-family: 'DM Serif Display', serif;
+      z-index: 2;
+      text-align: center;
+      font-weight: 400;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem 3rem;
+      border-radius: 8px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+      max-width: 90%;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      background-color: rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    }
+
+    section h2 {
+      font-size: 2.4rem;
+      color: #f2e5d5;
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .cabana ul {
+      padding-left: 1.5rem;
+      line-height: 1.8;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.03);
+      filter: brightness(1.1);
+    }
+
+    footer {
+      background-color: #3c2c22;
+      color: #e8dcd2;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    footer a {
+      color: #d4bfae;
+      text-decoration: underline;
+    }
+
+    .map-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .map-link svg {
+      width: 1em;
+      height: 1em;
+      fill: #d4bfae;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="titulo-principal">Recanto do Plátano</div>
+  </header>
+
+  <section class="sobre">
+    <h2>Sobre o Recanto</h2>
+    <p>
+      Localizado em meio à natureza, o Recanto do Plátano é um refúgio ideal para casais que desejam desacelerar e se reconectar. Com muito verde ao redor, canto de pássaros e o som suave da brisa nas folhas, oferecemos um ambiente acolhedor, calmo e exclusivo.
+    </p>
+  </section>
+
+  <section class="cabana">
+    <h2>A Cabana</h2>
+    <p>
+      A cabana foi cuidadosamente projetada com elementos rústicos e modernos, unindo conforto e charme. Ela conta com:
+    </p>
+    <ul>
+      <li>Quiosque com churrasqueira</li>
+      <li>Cozinha equipada</li>
+      <li>Banheira com hidromassagem</li>
+      <li>Cama com vista para a natureza</li>
+    </ul>
+  </section>
+
+  <section class="galeria">
+    <h2>Galeria</h2>
+    <img src="imagens/foto1.jpg" alt="Vista da cabana" />
+    <img src="imagens/foto2.jpg" alt="Interior rústico da cabana" />
+    <img src="imagens/foto3.jpg" alt="Banheira com vista" />
+    <img src="imagens/foto4.jpg" alt="Chimarrão no Recanto do Plátano" />
+  </section>
+
+  <footer>
+    <p>© 2025 Recanto do Plátano — Todos os direitos reservados</p>
+    <p>Contato: <a href="https://wa.me/5551994499739" target="_blank">(51) 99449-9739</a></p>
+    <p>
+      <a href="https://maps.app.goo.gl/d1mNwduypXNQwYoZA?g_st=iw" target="_blank" class="map-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+        Ver no Google Maps
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
+
+
+
+
